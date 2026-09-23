@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "YAfwCnJEX1o=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\koeni\\source\\repos\\AssemblyEngine\\AssemblyEngine\\AssemblyEngine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\koeni\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\10.0.11\\microsoft.bcl.asyncinterfaces.10.0.11.nupkg.sha512",
+    "C:\\Users\\koeni\\.nuget\\packages\\system.buffers\\4.6.1\\system.buffers.4.6.1.nupkg.sha512",
+    "C:\\Users\\koeni\\.nuget\\packages\\system.io.pipelines\\10.0.11\\system.io.pipelines.10.0.11.nupkg.sha512",
+    "C:\\Users\\koeni\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512",
+    "C:\\Users\\koeni\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.1.2\\system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
+    "C:\\Users\\koeni\\.nuget\\packages\\system.text.encodings.web\\10.0.11\\system.text.encodings.web.10.0.11.nupkg.sha512",
+    "C:\\Users\\koeni\\.nuget\\packages\\system.text.json\\10.0.11\\system.text.json.10.0.11.nupkg.sha512",
+    "C:\\Users\\koeni\\.nuget\\packages\\system.threading.tasks.extensions\\4.6.3\\system.threading.tasks.extensions.4.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

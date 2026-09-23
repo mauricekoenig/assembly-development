@@ -1,0 +1,10 @@
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\obj\Debug\netstandard2.1\AssemblyEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\obj\Debug\netstandard2.1\AssemblyEngine.AssemblyInfoInputs.cache
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\obj\Debug\netstandard2.1\AssemblyEngine.AssemblyInfo.cs
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\obj\Debug\netstandard2.1\AssemblyEngine.csproj.CoreCompileInputs.cache
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\bin\Debug\netstandard2.1\AssemblyEngine.deps.json
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\bin\Debug\netstandard2.1\AssemblyEngine.dll
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\bin\Debug\netstandard2.1\AssemblyEngine.pdb
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\obj\Debug\netstandard2.1\AssemblyEngine.dll
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\obj\Debug\netstandard2.1\AssemblyEngine.pdb
+C:\Users\koeni\source\repos\AssemblyEngine\AssemblyEngine\obj\Debug\netstandard2.1\AssemblyEngine.csproj.AssemblyReference.cache
