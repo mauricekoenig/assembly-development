@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="10.0.11" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Content\effects.json" LogicalName="GameEngine.Content.effects.json" />
+		<EmbeddedResource Include="Content\passives.json" LogicalName="GameEngine.Content.passives.json" />
+		<EmbeddedResource Include="Content\units.json" LogicalName="GameEngine.Content.units.json" />
+		<EmbeddedResource Include="Content\abilities.json" LogicalName="GameEngine.Content.abilities.json" />
+		<EmbeddedResource Include="Content\enemies.json" LogicalName="GameEngine.Content.enemies.json" />
+		<EmbeddedResource Include="Content\pools.json" LogicalName="GameEngine.Content.pools.json" />
+		<EmbeddedResource Include="Content\run_plans.json" LogicalName="GameEngine.Content.run_plans.json" />
+		<EmbeddedResource Include="Content\events.json" LogicalName="GameEngine.Content.events.json" />
+		<EmbeddedResource Include="Content\vendors.json" LogicalName="GameEngine.Content.vendors.json" />
+		<EmbeddedResource Include="Content\blessings.json" LogicalName="GameEngine.Content.blessings.json" />
+		<EmbeddedResource Include="Content\relics.json" LogicalName="GameEngine.Content.relics.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Utils\" />
+	</ItemGroup>
+
+
+</Project>
