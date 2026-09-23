@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ability_heal_unit_20",
+    "name": "Heal Unit (20)",
+    "description": "Restore 20 health to the affected ring object.",
+    "canBeItemized": false,
+    "cooldownRounds": 1,
+    "selectionType": "Unit",
+    "selectionRules": [
+      "TargetMustBeDamaged"
+    ],
+    "effects": [
+      {
+        "effectId": "effect:heal20",
+        "target": "RingObject"
+      }
+    ]
+  },
+  {
+    "id": "ability:marksmanship",
+    "name": "Marksmanship",
+    "description": "Deal 10 fire damage to the affected ring object.",
+    "canBeItemized": false,
+    "cooldownRounds": 1,
+    "selectionType": "Unit",
+    "selectionRules": [],
+    "effects": [
+      {
+        "effectId": "effect:deal10_fire_damage",
+        "target": "RingObject"
+      }
+    ]
+  }
+]

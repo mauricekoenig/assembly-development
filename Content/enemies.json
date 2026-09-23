@@ -1,0 +1,334 @@
+[
+  {
+    "id": "enemy:goblin",
+    "name": "Goblin",
+    "type": "Normal",
+    "baseHealth": 30,
+    "passiveIds": [
+      "passive:spikes"
+    ],
+    "actions": [
+      {
+        "id": "enemyaction:laser_beam",
+        "name": "Laser Beam",
+        "description": "Deals 10 Physical damage to a random living unit.",
+        "targeting": "RandomLivingUnit",
+        "delayTurns": 0,
+        "positions": [],
+        "effects": [
+          {
+            "effectId": "effect:deal10_physical_damage",
+            "target": "RingObject"
+          }
+        ]
+      }
+    ],
+    "sectors": [
+      {
+        "position": "Top",
+        "name": "Top Sector",
+        "sectorType": "Water",
+        "effects": []
+      },
+      {
+        "position": "Bottom",
+        "name": "Bottom Sector",
+        "sectorType": "Water",
+        "effects": []
+      },
+      {
+        "position": "Right",
+        "name": "Right Sector",
+        "sectorType": "Water",
+        "effects": []
+      },
+      {
+        "position": "Left",
+        "name": "Left Sector",
+        "sectorType": "Water",
+        "effects": [
+          {
+            "effectId": "effect:deal10_physical_damage",
+            "target": "RingObject"
+          }
+        ]
+      }
+    ],
+    "loot": [
+      {
+        "weight": 100,
+        "type": "PassiveRecipe",
+        "contentId": "passive:spikes"
+      }
+    ]
+  },
+  {
+    "id": "enemy:dragon",
+    "name": "Dragon",
+    "type": "Boss",
+    "baseHealth": 31,
+    "passiveIds": [
+      "passive:fortify"
+    ],
+    "actions": [
+      {
+        "id": "fire_breath",
+        "name": "Fire Breath",
+        "description": "Deals 10 Fire damage to a random living unit.",
+        "targeting": "RandomLivingUnit",
+        "delayTurns": 1,
+        "positions": [],
+        "effects": [
+          {
+            "effectId": "effect:deal10_fire_damage",
+            "target": "RingObject"
+          }
+        ]
+      }
+    ],
+    "sectors": [
+      {
+        "position": "Left",
+        "name": "Left Sector",
+        "sectorType": "Fire",
+        "effects": []
+      },
+      {
+        "position": "Right",
+        "name": "Right Sector",
+        "sectorType": "Fire",
+        "effects": []
+      }
+    ],
+    "loot": [
+      {
+        "weight": 100,
+        "type": "EffectRecipe",
+        "contentId": "effect:deal30_physical_damage"
+      }
+    ]
+  },
+  {
+    "id": "enemy:mecha_king",
+    "name": "Mecha King",
+    "type": "Boss",
+    "baseHealth": 200,
+    "passiveIds": [
+      "passive:spikes"
+    ],
+    "actions": [
+      {
+        "id": "enemyaction:rocket_rain",
+        "name": "Rocket Rain",
+        "description": "Deal 30 fire damage to all units.",
+        "targeting": "AllLivingUnits",
+        "delayTurns": 0,
+        "positions": [],
+        "effects": [
+          {
+            "effectId": "damage_fire_30",
+            "target": "AllLivingUnits"
+          }
+        ]
+      },
+      {
+        "id": "enemyaction:engine_fuel",
+        "name": "Engine Fuel",
+        "description": "Heal for 20.",
+        "targeting": "None",
+        "delayTurns": 0,
+        "positions": [],
+        "effects": [
+          {
+            "effectId": "effect:heal20",
+            "target": "Self"
+          }
+        ]
+      }
+    ],
+    "sectors": [],
+    "loot": [
+      {
+        "weight": 100,
+        "type": "PassiveRecipe",
+        "contentId": "passive:spikes"
+      }
+    ]
+  },
+  {
+    "id": "enemy:infernal",
+    "name": "Infernal",
+    "type": "Boss",
+    "baseHealth": 300,
+    "passiveIds": [],
+    "actions": [
+      {
+        "id": "enemyaction:meteor",
+        "name": "Meteor",
+        "description": "deals fire damage",
+        "targeting": "RingPositions",
+        "delayTurns": 0,
+        "positions": [
+          "Top",
+          "Bottom"
+        ],
+        "effects": [
+          {
+            "effectId": "effect:deal10_fire_damage",
+            "target": "RingObject"
+          }
+        ]
+      }
+    ],
+    "sectors": [],
+    "loot": []
+  },
+  {
+    "id": "enemy:fisherman",
+    "name": "Fisherman",
+    "type": "Normal",
+    "baseHealth": 150,
+    "passiveIds": [],
+    "actions": [
+      {
+        "id": "enemyaction:hook",
+        "name": "Hook",
+        "description": "Hooking",
+        "targeting": "RingPositions",
+        "delayTurns": 0,
+        "positions": [
+          "Right"
+        ],
+        "effects": [
+          {
+            "effectId": "effect:deal10_physical_damage",
+            "target": "RingObject"
+          }
+        ]
+      }
+    ],
+    "sectors": [
+      {
+        "position": "Right",
+        "name": "Right Sector",
+        "sectorType": "Grass",
+        "effects": [
+          {
+            "effectId": "effect:heal20",
+            "target": "RingObject"
+          }
+        ]
+      },
+      {
+        "position": "Left",
+        "name": "Left Sector",
+        "sectorType": "Fire",
+        "effects": [
+          {
+            "effectId": "effect:heal5",
+            "target": "RingObject"
+          }
+        ]
+      },
+      {
+        "position": "Top",
+        "name": "Top Sector",
+        "sectorType": "Water",
+        "effects": [
+          {
+            "effectId": "effect:heal20",
+            "target": "RingObject"
+          }
+        ]
+      },
+      {
+        "position": "Bottom",
+        "name": "Bottom Sector",
+        "sectorType": "Cursed",
+        "effects": [
+          {
+            "effectId": "effect:heal20",
+            "target": "RingObject"
+          }
+        ]
+      }
+    ],
+    "loot": [
+      {
+        "weight": 100,
+        "type": "PassiveRecipe",
+        "contentId": "passive:spikes"
+      }
+    ]
+  },
+  {
+    "id": "enemy:bixta",
+    "name": "Bixta",
+    "type": "Boss",
+    "baseHealth": 200,
+    "passiveIds": [],
+    "actions": [
+      {
+        "id": "enemyaction:acid_nightmare",
+        "name": "Acid Nightmare",
+        "description": "bla bla",
+        "targeting": "RandomLivingUnit",
+        "delayTurns": 0,
+        "positions": [],
+        "effects": [
+          {
+            "effectId": "damage_fire_30",
+            "target": "RingObject"
+          }
+        ]
+      }
+    ],
+    "sectors": [
+      {
+        "position": "Right",
+        "name": "Right Sector",
+        "sectorType": "Water",
+        "effects": [
+          {
+            "effectId": "effect:deal10_fire_damage",
+            "target": "RingObject"
+          }
+        ]
+      },
+      {
+        "position": "Left",
+        "name": "Left Sector",
+        "sectorType": "Grass",
+        "effects": [
+          {
+            "effectId": "effect:heal20",
+            "target": "RingObject"
+          }
+        ]
+      },
+      {
+        "position": "Top",
+        "name": "Top Sector",
+        "sectorType": "Fire",
+        "effects": [
+          {
+            "effectId": "effect:deal10_fire_damage",
+            "target": "RingObject"
+          }
+        ]
+      },
+      {
+        "position": "Bottom",
+        "name": "Bottom Sector",
+        "sectorType": "Cursed",
+        "effects": [
+          {
+            "effectId": "effect:deal10_fire_damage",
+            "target": "RingObject"
+          }
+        ]
+      }
+    ],
+    "loot": []
+  }
+]

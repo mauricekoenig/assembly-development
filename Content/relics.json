@@ -1,0 +1,19 @@
+[
+  {
+    "id": "relic:heart_of_the_deep",
+    "name": "Heart of the Deep",
+    "description": "Aquatic Units receive 50% more healing.",
+    "canBeRewarded": false,
+    "modifiers": [
+      {
+        "type": "IncomingHealing",
+        "operation": "IncreasePercent",
+        "amount": 50,
+        "damageType": null,
+        "sourceUnitTag": null,
+        "targetUnitTag": "Aquatic"
+      }
+    ],
+    "effects": []
+  }
+]

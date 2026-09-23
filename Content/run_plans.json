@@ -1,0 +1,24 @@
+[
+  {
+    "id": "standard_run",
+    "name": "Standard Run",
+    "isDefault": true,
+    "startingUnitSelection": {
+      "poolId": "starting_units",
+      "choiceCount": 3
+    },
+    "stages": [
+      {
+        "enemyPoolId": "enemies_stage1",
+        "bossPoolId": "bosses_stage1",
+        "eventPoolId": "events_default",
+        "vendorPoolId": "vendors_shop_default",
+        "floorTypes": [
+          "Event",
+          "Event",
+          "Boss"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "vendor:traveling_merchant",
+    "name": "Traveling Merchant",
+    "offerCount": 3,
+    "offers": [
+      {
+        "type": "PassiveRecipe",
+        "contentId": "passive:spikes",
+        "price": 50,
+        "weight": 100
+      },
+      {
+        "type": "Blessing",
+        "contentId": "blessing:gold_50",
+        "price": 100,
+        "weight": 100
+      },
+      {
+        "type": "Relic",
+        "contentId": "relic:heart_of_the_deep",
+        "price": 100,
+        "weight": 100
+      }
+    ]
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "id": "effect:deal20_magical_damage",
+    "name": "Deal 20 Magical Damage",
+    "description": "Deal 20 magical damage.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 20,
+        "damageType": "Magical"
+      }
+    ]
+  },
+  {
+    "id": "effect:deal10_physical_damage",
+    "name": "Deal 10 Physical Damage",
+    "description": "Deal 10 fire damage.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 10,
+        "damageType": "Fire"
+      }
+    ]
+  },
+  {
+    "id": "effect:deal30_physical_damage",
+    "name": "Deal 30 Physical Damage",
+    "description": "Deal 30 physical damage.",
+    "canBeItemized": true,
+    "itemization": {
+      "target": "Enemy"
+    },
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 30,
+        "damageType": "Physical"
+      }
+    ]
+  },
+  {
+    "id": "effect:heal20",
+    "name": "Heal 20",
+    "description": "Restore 20 health.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Heal",
+        "amount": 20,
+        "damageType": "Physical"
+      }
+    ]
+  },
+  {
+    "id": "effect:move_ring_object",
+    "name": "Move Ring Object",
+    "description": "Move the selected ring object to the selected ring position.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "MoveRingObject",
+        "amount": 0,
+        "damageType": "Physical"
+      }
+    ]
+  },
+  {
+    "id": "effect:deal5_physical_damage",
+    "name": "Deal 5 Physical Damage",
+    "description": "Deal 5 physical damage.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 5,
+        "damageType": "Physical"
+      }
+    ]
+  },
+  {
+    "id": "effect:deal40_magical_damage",
+    "name": "Deal 40 Magical Damage",
+    "description": "Deal 40 magical damage.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 40,
+        "damageType": "Magical"
+      }
+    ]
+  },
+  {
+    "id": "effect:deal10_fire_damage",
+    "name": "Deal 10 Fire Damage",
+    "description": "Deal 10 fire damage.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 10,
+        "damageType": "Fire"
+      }
+    ]
+  },
+  {
+    "id": "effect:deal10_water_damage",
+    "name": "Deal 10 Water Damage",
+    "description": "Deal 10 water damage.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 10,
+        "damageType": "Water"
+      }
+    ]
+  },
+  {
+    "id": "effect:heal5",
+    "name": "Heal (5)",
+    "description": "Restore 5 health.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Heal",
+        "amount": 5,
+        "damageType": "Physical"
+      }
+    ]
+  },
+  {
+    "id": "damage_fire_30",
+    "name": "Damage. Fire. 30.",
+    "description": "Deal 30 fire damage.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 30,
+        "damageType": "Fire"
+      }
+    ]
+  },
+  {
+    "id": "effect:deal50_ice_damage",
+    "name": "Deal 50 Ice Damage",
+    "description": "Deal 50 ice damage.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 50,
+        "damageType": "Ice"
+      }
+    ]
+  },
+  {
+    "id": "effect:deal50_magical_damage",
+    "name": "Deal 50 damage.",
+    "description": "Deal 50 magical damage.",
+    "canBeItemized": false,
+    "itemization": null,
+    "components": [
+      {
+        "action": "Damage",
+        "amount": 50,
+        "damageType": "Magical"
+      }
+    ]
+  }
+]

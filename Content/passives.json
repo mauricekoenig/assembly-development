@@ -1,0 +1,61 @@
+[
+  {
+    "id": "passive:holyhands",
+    "name": "Holy Hands",
+    "description": "Increases outgoing fire damage by 30%.",
+    "canBeItemized": false,
+    "modifiers": [
+      {
+        "type": "OutgoingDamage",
+        "operation": "IncreasePercent",
+        "amount": 30,
+        "damageType": "Fire"
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "passive:fortify",
+    "name": "Fortify",
+    "description": "Reduces incoming physical damage by 30%.",
+    "canBeItemized": false,
+    "modifiers": [
+      {
+        "type": "IncomingDamage",
+        "operation": "ReducePercent",
+        "amount": 30,
+        "damageType": "Physical"
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "passive:spikes",
+    "name": "Spikes",
+    "description": "When this takes damage, deal 5 physical damage to the affected ring object.",
+    "canBeItemized": true,
+    "modifiers": [],
+    "effects": [
+      {
+        "effectId": "effect:deal5_physical_damage",
+        "trigger": "DamageTaken",
+        "target": "RingObject"
+      }
+    ]
+  },
+  {
+    "id": "passive:tide_storm",
+    "name": "Tide Storm",
+    "description": "Increases outgoing damage by 20%.",
+    "canBeItemized": false,
+    "modifiers": [
+      {
+        "type": "OutgoingDamage",
+        "operation": "IncreasePercent",
+        "amount": 20,
+        "damageType": null
+      }
+    ],
+    "effects": []
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "blessing:gold_50",
+    "name": "Gold Blessing",
+    "description": "Gain 50 currency immediately.",
+    "canBeRewarded": false,
+    "effects": [
+      {
+        "type": "GainCurrency",
+        "amount": 50,
+        "sector": null
+      }
+    ]
+  },
+  {
+    "id": "blessing:fire_1",
+    "name": "Ember Blessing",
+    "description": "Increase the Fire sector value by 1 for this run.",
+    "canBeRewarded": false,
+    "effects": [
+      {
+        "type": "ModifySectorValue",
+        "amount": 1,
+        "sector": "Fire"
+      }
+    ]
+  },
+  {
+    "id": "blessing:test_flame_ward",
+    "name": "Flame Ward",
+    "description": "Reduce the value of all Fire sectors by 5 for this run.",
+    "canBeRewarded": false,
+    "effects": [
+      {
+        "type": "ModifySectorValue",
+        "amount": -5,
+        "sector": "Fire"
+      }
+    ]
+  }
+]

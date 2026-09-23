@@ -1,0 +1,145 @@
+[
+  {
+    "id": "unit:priest",
+    "name": "Priest",
+    "canBeRewarded": true,
+    "baseHealth": 70,
+    "effectSlotCapacity": 3,
+    "abilitySlotCapacity": 1,
+    "tags": [
+      "Humanoid"
+    ],
+    "actions": [
+      {
+        "id": "unitaction:priest_holy_smite",
+        "name": "Holy Smite",
+        "description": "Deals 20 magical damage to the enemy.",
+        "effects": [
+          {
+            "effectId": "effect:deal20_magical_damage",
+            "target": "Enemy"
+          }
+        ]
+      }
+    ],
+    "passiveIds": [
+      "passive:holyhands"
+    ],
+    "abilityIds": [
+      "ability_heal_unit_20"
+    ]
+  },
+  {
+    "id": "unit:knight",
+    "name": "Knight",
+    "canBeRewarded": true,
+    "baseHealth": 100,
+    "effectSlotCapacity": 1,
+    "abilitySlotCapacity": 1,
+    "tags": [
+      "Humanoid"
+    ],
+    "actions": [
+      {
+        "id": "unitaction:knight_steel_strike",
+        "name": "Steel Strike",
+        "description": "Deals 10 physical damage to the enemy.",
+        "effects": [
+          {
+            "effectId": "effect:deal10_physical_damage",
+            "target": "Enemy"
+          }
+        ]
+      }
+    ],
+    "passiveIds": [
+      "passive:fortify"
+    ],
+    "abilityIds": []
+  },
+  {
+    "id": "unit:archer",
+    "name": "Archer",
+    "canBeRewarded": true,
+    "baseHealth": 60,
+    "effectSlotCapacity": 3,
+    "abilitySlotCapacity": 1,
+    "tags": [
+      "Humanoid"
+    ],
+    "actions": [
+      {
+        "id": "unitaction:piercing_shot",
+        "name": "Piercing Shot",
+        "description": "Deals 30 physical damage to the enemy.",
+        "effects": [
+          {
+            "effectId": "effect:deal30_physical_damage",
+            "target": "Enemy"
+          }
+        ]
+      }
+    ],
+    "passiveIds": [],
+    "abilityIds": [
+      "ability:marksmanship"
+    ]
+  },
+  {
+    "id": "unit:poseidon",
+    "name": "Poseidon",
+    "canBeRewarded": true,
+    "baseHealth": 95,
+    "effectSlotCapacity": 2,
+    "abilitySlotCapacity": 1,
+    "tags": [
+      "Aquatic",
+      "Humanoid"
+    ],
+    "actions": [
+      {
+        "id": "unitaction:poseidon_tidal_strike",
+        "name": "Tidal Strike",
+        "description": "Sends a crashing wave at the enemy and deals 10 physical damage.",
+        "effects": [
+          {
+            "effectId": "effect:deal10_water_damage",
+            "target": "Enemy"
+          }
+        ]
+      }
+    ],
+    "passiveIds": [
+      "passive:tide_storm"
+    ],
+    "abilityIds": []
+  },
+  {
+    "id": "unit:the_queen",
+    "name": "The Queen",
+    "canBeRewarded": true,
+    "baseHealth": 150,
+    "effectSlotCapacity": 3,
+    "abilitySlotCapacity": 2,
+    "tags": [
+      "Humanoid"
+    ],
+    "actions": [
+      {
+        "id": "unitaction:checkmate",
+        "name": "Checkmate",
+        "description": "Checkmate!",
+        "effects": [
+          {
+            "effectId": "effect:deal50_ice_damage",
+            "target": "Enemy"
+          }
+        ]
+      }
+    ],
+    "passiveIds": [],
+    "abilityIds": [
+      "ability_heal_unit_20"
+    ]
+  }
+]

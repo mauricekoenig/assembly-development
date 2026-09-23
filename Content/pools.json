@@ -1,0 +1,84 @@
+[
+  {
+    "id": "starting_units",
+    "name": "Starting Units",
+    "kind": "Unit",
+    "entries": [
+      {
+        "type": "Unit",
+        "contentId": "unit:archer",
+        "weight": 100
+      },
+      {
+        "type": "Unit",
+        "contentId": "unit:the_queen",
+        "weight": 100
+      },
+      {
+        "type": "Unit",
+        "contentId": "unit:poseidon",
+        "weight": 100
+      }
+    ]
+  },
+  {
+    "id": "enemies_stage1",
+    "name": "Stage 1 Enemies",
+    "kind": "NormalEnemy",
+    "entries": [
+      {
+        "type": "Enemy",
+        "contentId": "enemy:fisherman",
+        "weight": 100
+      }
+    ]
+  },
+  {
+    "id": "bosses_stage1",
+    "name": "Stage 1 Bosses",
+    "kind": "BossEnemy",
+    "entries": [
+      {
+        "type": "Enemy",
+        "contentId": "enemy:bixta",
+        "weight": 100
+      }
+    ]
+  },
+  {
+    "id": "events_default",
+    "name": "Default Events",
+    "kind": "Event",
+    "entries": [
+      {
+        "type": "Event",
+        "contentId": "event_random_unit",
+        "weight": 100
+      }
+    ]
+  },
+  {
+    "id": "vendors_shop_default",
+    "name": "Default Shop Vendors",
+    "kind": "Vendor",
+    "entries": [
+      {
+        "type": "Vendor",
+        "contentId": "vendor:traveling_merchant",
+        "weight": 100
+      }
+    ]
+  },
+  {
+    "id": "relics_default",
+    "name": "Default Relics",
+    "kind": "Relic",
+    "entries": [
+      {
+        "type": "Relic",
+        "contentId": "relic:heart_of_the_deep",
+        "weight": 100
+      }
+    ]
+  }
+]

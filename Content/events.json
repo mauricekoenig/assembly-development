@@ -1,0 +1,309 @@
+[
+  {
+    "id": "event_ancient_altar",
+    "name": "Ancient Altar",
+    "description": "An ancient altar hums with a faint, unfamiliar energy.",
+    "startNodeId": "choice",
+    "nodes": [
+      {
+        "id": "choice",
+        "type": "Choice",
+        "title": "Ancient Altar",
+        "description": "Choose how to approach the altar.",
+        "options": [
+          {
+            "id": "pray",
+            "name": "Pray",
+            "description": "Receive a mysterious blessing.",
+            "requirements": [],
+            "costs": [],
+            "outcomes": [
+              {
+                "type": "GainCurrency",
+                "amount": 50,
+                "item": null,
+                "reward": null
+              }
+            ],
+            "nextNodeId": "end"
+          },
+          {
+            "id": "sacrifice",
+            "name": "Sacrifice",
+            "description": "Sacrifice health for a greater reward.",
+            "requirements": [
+              {
+                "type": "HasLivingUnit",
+                "amount": 0,
+                "unitTag": null
+              }
+            ],
+            "costs": [
+              {
+                "type": "DamageFirstLivingUnit",
+                "amount": 25,
+                "item": null,
+                "reward": null
+              }
+            ],
+            "outcomes": [
+              {
+                "type": "GainCurrency",
+                "amount": 100,
+                "item": null,
+                "reward": null
+              }
+            ],
+            "nextNodeId": "end"
+          },
+          {
+            "id": "leave",
+            "name": "Leave",
+            "description": "Leave the altar untouched.",
+            "requirements": [],
+            "costs": [],
+            "outcomes": [],
+            "nextNodeId": "end"
+          }
+        ],
+        "outcomes": [],
+        "nextNodeId": null,
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      },
+      {
+        "id": "end",
+        "type": "End",
+        "title": null,
+        "description": null,
+        "options": [],
+        "outcomes": [],
+        "nextNodeId": null,
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      }
+    ]
+  },
+  {
+    "id": "event_found_gold",
+    "name": "Found Gold",
+    "description": "Something glints between the stones.",
+    "startNodeId": "reward",
+    "nodes": [
+      {
+        "id": "reward",
+        "type": "Automatic",
+        "title": "Found Gold",
+        "description": "You find a small cache of currency.",
+        "options": [],
+        "outcomes": [
+          {
+            "type": "GainCurrency",
+            "amount": 75,
+            "item": null,
+            "reward": null
+          }
+        ],
+        "nextNodeId": "end",
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      },
+      {
+        "id": "end",
+        "type": "End",
+        "title": null,
+        "description": null,
+        "options": [],
+        "outcomes": [],
+        "nextNodeId": null,
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      }
+    ]
+  },
+  {
+    "id": "event_grandmaster_test",
+    "name": "The Grandmaster",
+    "description": "A silent grandmaster waits beside an old chessboard.",
+    "startNodeId": "challenge_choice",
+    "nodes": [
+      {
+        "id": "challenge_choice",
+        "type": "Choice",
+        "title": "The Grandmaster",
+        "description": "The grandmaster gestures toward the board.",
+        "options": [
+          {
+            "id": "challenge",
+            "name": "Challenge him",
+            "description": "Play a game of chess.",
+            "requirements": [],
+            "costs": [],
+            "outcomes": [],
+            "nextNodeId": "chess_match"
+          },
+          {
+            "id": "leave",
+            "name": "Leave",
+            "description": "Continue your journey.",
+            "requirements": [],
+            "costs": [],
+            "outcomes": [],
+            "nextNodeId": "end"
+          }
+        ],
+        "outcomes": [],
+        "nextNodeId": null,
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      },
+      {
+        "id": "chess_match",
+        "type": "Activity",
+        "title": "A Game of Chess",
+        "description": "Defeat the grandmaster to earn his respect.",
+        "options": [],
+        "outcomes": [],
+        "nextNodeId": null,
+        "activityId": "chess",
+        "activityContentId": "grandmaster_test_match",
+        "activityResults": [
+          {
+            "resultId": "Win",
+            "outcomes": [],
+            "nextNodeId": "win_reward"
+          },
+          {
+            "resultId": "Draw",
+            "outcomes": [],
+            "nextNodeId": "draw_reward"
+          },
+          {
+            "resultId": "Loss",
+            "outcomes": [],
+            "nextNodeId": "end"
+          }
+        ]
+      },
+      {
+        "id": "win_reward",
+        "type": "Presentation",
+        "title": "Victory",
+        "description": "The Grandmaster lowers his head in acknowledgement.",
+        "options": [],
+        "outcomes": [
+          {
+            "type": "GainReward",
+            "amount": 0,
+            "item": null,
+            "reward": {
+              "type": "Unit",
+              "contentId": "unit:the_queen"
+            }
+          }
+        ],
+        "nextNodeId": "end",
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      },
+      {
+        "id": "draw_reward",
+        "type": "Presentation",
+        "title": "A Worthy Draw",
+        "description": "The Grandmaster gives a quiet nod of respect.",
+        "options": [],
+        "outcomes": [
+          {
+            "type": "GainCurrency",
+            "amount": 50,
+            "item": null,
+            "reward": null
+          }
+        ],
+        "nextNodeId": "end",
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      },
+      {
+        "id": "end",
+        "type": "End",
+        "title": null,
+        "description": null,
+        "options": [],
+        "outcomes": [],
+        "nextNodeId": null,
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      }
+    ]
+  },
+  {
+    "id": "event_random_unit",
+    "name": "Random Unit",
+    "description": "You get a random unit.",
+    "startNodeId": "choice",
+    "nodes": [
+      {
+        "id": "choice",
+        "type": "Presentation",
+        "title": "random_unit",
+        "description": "Choose what to do.",
+        "options": [
+          {
+            "id": "leave",
+            "name": "Leave",
+            "description": "Continue your journey.",
+            "requirements": [],
+            "costs": [],
+            "outcomes": [],
+            "nextNodeId": "end"
+          }
+        ],
+        "outcomes": [
+          {
+            "type": "GainReward",
+            "amount": 0,
+            "item": null,
+            "reward": {
+              "type": "Unit",
+              "contentId": "unit:the_queen"
+            }
+          },
+          {
+            "type": "GainReward",
+            "amount": 0,
+            "item": null,
+            "reward": {
+              "type": "Unit",
+              "contentId": "unit:the_queen"
+            }
+          }
+        ],
+        "nextNodeId": "end",
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      },
+      {
+        "id": "end",
+        "type": "End",
+        "title": null,
+        "description": null,
+        "options": [],
+        "outcomes": [],
+        "nextNodeId": null,
+        "activityId": null,
+        "activityContentId": null,
+        "activityResults": []
+      }
+    ]
+  }
+]
